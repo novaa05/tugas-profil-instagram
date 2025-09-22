@@ -1,0 +1,171 @@
+/* ====== Global ====== */
+body {
+  background-color: white;   /* light mode */
+  color: black;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ====== Foto Profil ====== */
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+/* ====== Header ====== */
+.header {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  background-color: white;
+}
+
+.profile-stats {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.bio {
+  margin-top: 10px;
+  color: #333;
+}
+
+/* ====== Buttons ====== */
+.btn {
+  border-radius: 8px;
+}
+
+/* ====== Sorotan (Highlight) ====== */
+.highlight-container {
+  display: flex;
+  gap: 15px;
+  padding: 15px 0;
+  overflow-x: auto;
+  white-space: nowrap;
+  border: none;   /* hilangin garis putih */
+}
+
+.highlight-item {
+  display: inline-block;
+  text-align: center;
+  margin-right: 15px;
+}
+
+.highlight {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid black;  /* outline biar kelihatan */
+}
+
+.highlight-name {
+  font-size: 12px;
+  margin-top: 5px;
+  text-align: center;
+  color: black;
+}
+
+/* Scrollbar untuk sorotan */
+.highlight-container::-webkit-scrollbar {
+  height: 6px;
+}
+.highlight-container::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 3px;
+}
+
+/* ====== Feed ====== */
+.feed {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.feed-img {
+  width: 100%;
+  aspect-ratio: 1/1;   /* Biar kotak rapi */
+  object-fit: cover;
+}
+
+/* ====== Tab Navigasi ====== */
+.tab-nav {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.tab-item {
+  font-size: 22px;
+  color: black;
+  cursor: pointer;
+}
+
+.tab-item.active {
+  color: black;
+  font-weight: bold;
+  /* border-top: 2px solid black;  <- kalau mau ada garis */
+}
+
+/* ====== Footer ====== */
+footer {
+  padding: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: #777;
+  background-color: white;
+}
+
+/* ====== Responsive ====== */
+
+/* Tablet (768px – 1023px) */
+@media (max-width: 1023px) and (min-width: 768px) {
+  .profile-stats {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .highlight {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+/* Mobile (≤ 767px) */
+@media (max-width: 767px) {
+  .header {
+    text-align: center;
+  }
+
+  .profile-stats {
+    justify-content: center;
+  }
+
+  .highlight-container {
+    justify-content: flex-start;
+    padding-left: 10px;
+  }
+
+  .highlight {
+    width: 55px;
+    height: 55px;
+  }
+
+  .tab-nav {
+    justify-content: space-around;
+    gap: 0;
+  }
+
+  .feed {
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom biar enak di HP */
+  }
+}
