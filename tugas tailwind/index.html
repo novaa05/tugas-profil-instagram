@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Clone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Bootstrap Icons biar sama persis -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body class="bg-white text-black font-sans">
+
+<div class="max-w-5xl mx-auto p-4">
+  <!-- Header -->
+  <div class="flex flex-col md:flex-row md:items-start md:gap-8">
+    <!-- Foto Profil -->
+    <div class="flex justify-center md:justify-start">
+      <img src="assets/img/thorfinn.jpg" alt="Profile" class="w-28 h-28 rounded-full object-cover border">
+    </div>
+
+    <!-- Bio + Stats -->
+    <div class="flex-1 mt-4 md:mt-0">
+      <!-- Username + Tombol -->
+      <div class="flex flex-col md:flex-row md:items-center md:gap-4">
+        <h2 class="text-xl font-bold">bintangnovaaa</h2>
+        <button class="border border-gray-300 rounded px-3 py-1 text-sm mt-2 md:mt-0">Edit profile</button>
+      </div>
+
+      <!-- Stats -->
+      <div class="flex justify-center md:justify-start gap-6 mt-3 text-sm">
+        <div><span class="font-bold">9</span> posts</div>
+        <div><span class="font-bold">758</span> followers</div>
+        <div><span class="font-bold">649</span> following</div>
+      </div>
+
+      <!-- Bio -->
+      <p class="mt-3 text-sm">
+        nova <br> Sports <br> You'll never walk alone
+      </p>
+    </div>
+  </div>
+
+  <!-- Sorotan (Highlights) -->
+  <div class="flex gap-6 overflow-x-auto py-4 border-t border-b mt-6">
+    <div class="flex flex-col items-center">
+      <img src="assets/img/aku hadir.jpg" class="w-16 h-16 rounded-full object-cover border">
+      <span class="text-xs mt-1">kumliah</span>
+    </div>
+    <div class="flex flex-col items-center">
+      <img src="assets/img/tnt.jpg" class="w-16 h-16 rounded-full object-cover border">
+      <span class="text-xs mt-1">diluar</span>
+    </div>
+    <div class="flex flex-col items-center">
+      <img src="assets/img/thorfinn.jpg" class="w-16 h-16 rounded-full object-cover border">
+      <span class="text-xs mt-1">L</span>
+    </div>
+    <div class="flex flex-col items-center">
+      <img src="assets/img/gw.jpg" class="w-16 h-16 rounded-full object-cover border">
+      <span class="text-xs mt-1">ynwa</span>
+    </div>
+    <div class="flex flex-col items-center">
+      <img src="assets/img/velvet room.jpg" class="w-16 h-16 rounded-full object-cover border">
+      <span class="text-xs mt-1">✦</span>
+    </div>
+  </div>
+
+  <!-- Tab Navigasi -->
+  <div class="flex justify-around border-b py-2">
+    <i class="bi bi-grid-3x3-gap text-xl"></i>
+    <i class="bi bi-camera-reels text-xl"></i>
+    <i class="bi bi-bookmark text-xl"></i>
+    <i class="bi bi-person text-xl"></i>
+  </div>
+
+  <!-- Feed (Selalu 3 kolom, mobile & desktop) -->
+  <div class="grid grid-cols-3 gap-1 mt-2">
+    <img src="assets/img/aku hadir.jpg" class="w-full aspect-square object-cover">
+    <img src="assets/img/thorfinn.jpg" class="w-full aspect-square object-cover">
+    <img src="assets/img/tnt.jpg" class="w-full aspect-square object-cover">
+    <img src="assets/img/gw.jpg" class="w-full aspect-square object-cover">
+    <img src="assets/img/velvet room.jpg" class="w-full aspect-square object-cover">
+    <img src="assets/img/p3.jpg" class="w-full aspect-square object-cover">
+    <img src="assets/img/ada ikn coy.jpg" class="w-full aspect-square object-cover">
+    <img src="assets/img/sifu meng.jpg" class="w-full aspect-square object-cover">
+    <img src="assets/img/manusia hitam.jpg" class="w-full aspect-square object-cover">
+    <img src="assets/img/p3.jpg" class="w-full aspect-square object-cover">
+    <img src="assets/img/persona 3 reaper.jpg" class="w-full aspect-square object-cover">
+    <img src="assets/img/basreng.png" class="w-full aspect-square object-cover">
+  </div>
+</div>
+
+</body>
+</html>
